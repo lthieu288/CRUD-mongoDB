@@ -15,7 +15,7 @@ public class ObjectDto {
     String owner;
     String category;
     String lang;
-    Content content;
+    ContentOfPost content;
     String type;
     Integer level;
     Date when;

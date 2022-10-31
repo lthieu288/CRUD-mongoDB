@@ -44,6 +44,10 @@ public class ObjectController {
 
     @PutMapping("/medias/{id}")
     public ResponseEntity<?> pushNewField(@PathVariable("id") String id, @RequestBody Medias medias){
+        if(medias.getClass() == Medias.class){
+            throw new BadRequestException("Invalid input");
+        }
+
         ObjectDto object = objectService.pushToMedias(id, medias);
         if(object == null){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Not found any object have id: " + id);

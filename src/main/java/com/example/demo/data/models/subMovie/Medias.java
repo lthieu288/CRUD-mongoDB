@@ -6,10 +6,10 @@ import org.springframework.data.mongodb.core.mapping.Field;
 @Data
 public class Medias {
     @Field("id")
-    String id;
-    Integer height;
-    String path;
-    String thumb;
-    Integer type;
-    Integer width;
+    private String id;
+    private Integer height;
+    private String path;
+    private String thumb;
+    private Integer type;
+    private Integer width;
 }
