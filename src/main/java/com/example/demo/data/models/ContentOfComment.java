@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.util.Date;
 
 @Data
-public class ContentOfComment {
+public class ContentOfComment extends Content{
     private String id;
     private String lang;
     private Date dl146;

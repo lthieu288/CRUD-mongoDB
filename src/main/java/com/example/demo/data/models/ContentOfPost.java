@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-public class ContentOfPost {
+public class ContentOfPost extends Content{
     private String id;
     private String scope;
     private String owner;

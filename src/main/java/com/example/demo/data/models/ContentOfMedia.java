@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Data
-public class ContentOfMedia {
+public class ContentOfMedia extends Content{
     private String id;
     private String actor;
     private Date dl146;
